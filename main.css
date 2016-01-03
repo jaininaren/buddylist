@@ -1,0 +1,110 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    padding-top: 24px;
+}
+.buddylist{
+    border: 1px solid rgba(135,206,250,1);
+    float: left;
+    width: 320px;
+    height: 500px;   
+    background-color: rgba(135,206,250,0.6);
+    box-shadow: 10px 10px 5px #888888;
+    margin-left: 100px;
+    margin-bottom:24px;
+    position: relative;
+    border-radius:18px;
+}
+h2{
+    text-align: center;
+    margin: 16px 0;
+}
+li{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding: 10px 24px;
+}
+li:nth-child(even){
+    background: rgba(255,255,255,0.4);
+}
+#addcontact {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 23px;
+    top: 20px;
+    Z-index: 9999;
+}
+
+#addcontact:before, #addcontact:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: gray;
+}
+
+#addcontact:before {
+    left: 50%;
+    width: 30%;
+    margin-left: -15%;
+    height: 100%;
+}
+
+#addcontact:after {
+    top: 50%;
+    height: 30%;
+    margin-top: -15%;
+    width: 100%;
+}
+.onlinebuddies{
+    border: 1px solid rgba(135,206,250,1);
+    width: 320px;
+    height: 500px;
+    background-color: rgba(135,206,250,0.6);
+    box-shadow: 10px 10px 5px #888888;
+    float: left;
+    border-left: 0px;
+    margin-left: 100px;
+    margin-bottom:24px;
+    position: relative;
+    border-radius:18px;
+}
+
+table{
+    width: 100%;
+    padding: 10px 24px;
+}
+
+.cross:before, .cross:after {
+    content: "" !important;
+    position: absolute !important;
+    z-index: -1 !important;
+    transform:rotate(136deg);
+    -moz-transform:rotate(136deg);
+    -webkit-transform:rotate(136deg);
+}
+
+form{
+    padding: 0 5%;
+    width: 100%;
+}
+
+input{
+    width: 85%;
+    padding-left: 5%;
+    height: 30px;
+    background: transparent;
+    border: none;
+    background: rgba(255,255,255,0.4);
+    margin: 10px 0;
+    border-radius: 20px;
+}
+
+#addcontact:hover{
+    background-color: rgba(135,206,250,1);;
+    border-radius: 25px;
+    width: 25px;
+    height: 25px;
+}
